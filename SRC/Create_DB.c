@@ -20,6 +20,7 @@ int main(int argc, char **argv)
       exit(1);
   }
 
+// create database
   if (mysql_query(con, "CREATE DATABASE testCREATE_DB"))
   {
       fprintf(stderr, "%s\n", mysql_error(con));
