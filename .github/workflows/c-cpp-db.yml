@@ -14,6 +14,10 @@ jobs:
     steps:
       - name: Print a greeting                             
         run: echo Hi from our first workflow!
+      - name: Show ASCII greeting                             
+        uses: mscoutermarsh/ascii-art-action@master   
+        with:                               
+          text: 'HELLO!'
     #- uses: actions/checkout@v2
     #- name: configure
     #  run: ./configure
