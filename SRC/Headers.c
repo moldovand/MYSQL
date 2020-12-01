@@ -12,7 +12,7 @@ void finish_with_error(MYSQL *con)
 int main(int argc, char **argv)
 {
   MYSQL *con = mysql_init(NULL);
-
+//comment
   if (con == NULL)
   {
       fprintf(stderr, "mysql_init() failed\n");
