@@ -6,7 +6,7 @@ int main(int argc, char **argv)
 {
   MYSQL *con = mysql_init(NULL);
 
-//
+//added fake comment
   if (con == NULL)
   {
       fprintf(stderr, "%s\n", mysql_error(con));
