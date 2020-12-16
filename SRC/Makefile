@@ -1,6 +1,6 @@
 CFLAGS=`mysql_config --cflags --libs`
 
-all: Create_DB Create_Populate Last_Row_ID Retrieva_Data
+all: Create_DB Create_Populate Last_Row_ID Retrieva_Data Multiple_Statements
 
 Create_DB: Create_DB.c
 	gcc Create_DB.c -o Create_DB $(CFLAGS)
@@ -13,3 +13,6 @@ Last_Row_ID: Last_Row_ID.c
 
 Retrieva_Data: Retrieva_Data.c
 	gcc Retrieva_Data.c -o Retrieva_Data $(CFLAGS)
+
+Multiple_Statements: Multiple_Statements.c
+	gcc Multiple_Statements.c -o Multiple_Statements $(CFLAGS)
