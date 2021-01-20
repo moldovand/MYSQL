@@ -10,6 +10,7 @@ void finish_with_error(MYSQL *con)
   exit(1);
 }
 
+
 int main(int argc, char **argv)
 {
 
