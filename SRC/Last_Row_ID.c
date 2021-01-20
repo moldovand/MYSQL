@@ -9,6 +9,8 @@ void finish_with_error(MYSQL *con)
   exit(1);
 }
 
+//some silly edit
+
 int main(int argc, char **argv)
 {
   MYSQL *con = mysql_init(NULL);
